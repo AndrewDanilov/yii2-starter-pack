@@ -1,0 +1,100 @@
+// исправляем клерфиксы у форм
+.form.w-clearfix:after {
+	clear:none !important;
+}
+.form {
+	.w-checkbox:after, .w-radio:after {
+		clear:none !important;
+	}
+}
+
+// украшаем таблицы
+table {
+	width:100%;
+	border:1px solid #d2d2d2;
+	td {
+		padding:8px 20px;
+		border:1px #d2d2d2;
+		border-top-style:solid;
+		border-left-style:solid;
+		&:last-child {
+			border-right-style:solid;
+		}
+	}
+	tr {
+		&:first-child td {
+			background-color: #f7f7f7;
+		}
+		&:last-child td {
+			border-bottom-style:solid;
+		}
+	}
+}
+
+// прячем мобильное меню
+#mobile_menu {
+	display: none;
+	&.mm-menu_opened {
+		display: block;
+	}
+}
+
+// скрываем заголовок мобильного меню
+.mm-navbar {
+	display:none !important;
+}
+
+// меняем цвета мобильного меню
+.mm-panel {
+	background-color: #303030;
+	li {
+		color: hsla(0, 0%, 100%, .8);
+	}
+	a:hover,
+	a:hover ~ span {
+		color: #fff;
+	}
+	a.w--current {
+		color: red;
+	}
+	.mm-listitem_selected a {
+		background: #222222;
+	}
+	.mm-listitem__btn {
+		-webkit-tap-highlight-color: #222222;
+		tap-highlight-color: #222222;
+	}
+}
+
+// цвет стрелки мобильного меню
+.mm-btn_next:after {
+	border-color: rgba(255,255,255,.8);
+}
+
+// добовляем пространство после рекапчи
+.g-recaptcha {
+	margin-bottom:10px;
+}
+
+//////////////////////////////////////////////
+
+// исправляем плейсхолдер у поля поиска
+.search-field::placeholder {
+	line-height: 1em;
+}
+
+// исправляем выравнивание в галерее
+.fotorama__nav--thumbs {
+	text-align:left !important;
+}
+
+// исправляем положение и размер заголовка лайтбокса
+.fancybox-caption {
+	text-align: center;
+	font-size: 26px
+}
+
+// добавляем невидимость к отключенным кнопкам листалок
+.swiper-button-disabled {
+	display: none;
+}
