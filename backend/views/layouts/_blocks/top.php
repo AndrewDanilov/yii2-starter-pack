@@ -1,8 +1,10 @@
 <?php
 
-/* @var $this \yii\web\View */
+/* @var $this View */
 /* @var $content string */
 /* @var $directoryAsset false|string */
+
+use yii\web\View;
 
 ?>
 

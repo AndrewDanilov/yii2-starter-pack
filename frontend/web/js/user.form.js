@@ -47,8 +47,8 @@ $(function () {
 		form.trigger("reset");
 	};
 
-	$.fancybox.defaults.btnTpl.smallBtn =
-		'<a href="javascript:$.fancybox.close();" class="close-btn">x</a>';
+	//$.fancybox.defaults.btnTpl.smallBtn =
+	//	'<a href="javascript:$.fancybox.close();" class="close-btn">x</a>';
 
 	// обрабатываются только формы с атрибутом data-ajax
 	$('form[data-ajax]').submit(function(e) {

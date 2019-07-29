@@ -1,4 +1,11 @@
-$(function () {
+/**
+ * Update all select2 widgets.
+ * It selector is defined, function updates select2 widgets
+ * within elements inside this selector.
+ *
+ * selector - jQuery list of objects
+ */
+var select2update = function(selector) {
 	$.fn.select2.defaults.set("ajax--data-type", "json");
 	$.fn.select2.defaults.set("ajax--method", "post");
 	var body = $('body');
@@ -8,7 +15,13 @@ $(function () {
 	if (param && token) {
 		csrf_data[param] = token;
 	}
-	$('[data-select2]').each(function () {
+	var select;
+	if (typeof selector !== 'undefined') {
+		select = selector.find('[data-select2]');
+	} else {
+		select = $('[data-select2]');
+	}
+	select.each(function () {
 		var wrapper = $(this);
 		var wrapper_id = wrapper.attr('id');
 		if (!wrapper_id) {
@@ -98,4 +111,8 @@ $(function () {
 			});
 		}
 	});
+};
+
+$(function () {
+	select2update();
 });

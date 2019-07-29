@@ -34,41 +34,27 @@ table {
 // прячем мобильное меню
 #mobile_menu {
 	display: none;
-	&.mm-menu_opened {
+	&.mm-opened {
 		display: block;
 	}
 }
 
 // скрываем заголовок мобильного меню
-.mm-navbar {
+.mm-title {
 	display:none !important;
 }
 
 // меняем цвета мобильного меню
-.mm-panel {
-	background-color: #303030;
-	li {
-		color: hsla(0, 0%, 100%, .8);
-	}
+.mm-menu {
+	color:#fff !important;
+	background-color: #3B3D40 !important;
 	a:hover,
 	a:hover ~ span {
-		color: #fff;
+		color: #d0d0d0 !important;
 	}
-	a.w--current {
-		color: red;
+	.mm-selected a {
+		background-color: #222222 !important;
 	}
-	.mm-listitem_selected a {
-		background: #222222;
-	}
-	.mm-listitem__btn {
-		-webkit-tap-highlight-color: #222222;
-		tap-highlight-color: #222222;
-	}
-}
-
-// цвет стрелки мобильного меню
-.mm-btn_next:after {
-	border-color: rgba(255,255,255,.8);
 }
 
 // добовляем пространство после рекапчи
@@ -83,9 +69,68 @@ table {
 	line-height: 1em;
 }
 
+// исправляем отступы элементов в блоке "мы в цифрах"
+.numbers .numbers-block {
+	//margin-right: 20px;
+	//margin-left: 20px;
+	&:first-child {
+		//margin-left: 0;
+	}
+	&:last-child {
+		//margin-right: 0;
+	}
+}
+
+// исправляем бургер, так как превратили его в ссылку он перестал быть блоком
+.wrapper-burger {
+	display: block;
+}
+
+// исправляем положение всплывающей формы
+.div-form {
+	top:0 !important;
+}
+
+// исправляем выравнивание во всплывающей форме
+.div-block-40 {
+	text-align:center;
+}
+.heading-17 {
+	text-align:center;
+}
+
+// скрываем последний потомок родителя
+.hidden-last-child:last-child {
+	display: none;
+}
+
 // исправляем выравнивание в галерее
 .fotorama__nav--thumbs {
 	text-align:left !important;
+}
+
+// исправляем паддинги у всплывающей формы
+.div-form {
+	padding:35px !important;
+}
+
+// стили контейнера карты
+.map-wrapper {
+	margin-bottom:40px;
+	position:relative;
+	padding-top:50%;
+	.map {
+		position:absolute;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+	}
+}
+
+// исправляем положение меню городов в мобильной верстке
+.dropdown-list-2 {
+	position: absolute !important;
 }
 
 // исправляем положение и размер заголовка лайтбокса
@@ -94,7 +139,72 @@ table {
 	font-size: 26px
 }
 
-// добавляем невидимость к отключенным кнопкам листалок
-.swiper-button-disabled {
+// скрытые элементы пагинации
+.pagination-disabled {
 	display: none;
+}
+
+// слайдеры
+.service-gallery .swiper-slide {
+	width: auto;
+}
+
+// текстовые логотипы
+.section-popular .text-logo {
+	font-size: 36px;
+	line-height: 40px;
+}
+
+.empty {
+	display: block;
+	margin-bottom: 16px;
+	padding: 18px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(36, 48, 57, .02);
+	background-color: rgba(36, 48, 57, .03);
+	color: #292829;
+	text-align: center;
+	font-style: italic;
+}
+
+.services-icon {
+	width: 20px;
+}
+
+.service-card-icon {
+	width: 20px;
+}
+
+.page-image {
+	width: 200px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+.page-text {
+}
+.category-list-item {
+	display: block;
+	margin-bottom: 30px;
+	clear: both;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+	.list-item-image {
+		width: 200px;
+		float: left;
+	}
+	.list-item-content {
+		margin-left: 220px;
+		.list-item-body {
+			color: #333;
+		}
+		.list-item-title {
+			font-size: 26px;
+			display: block;
+			margin-bottom: 20px;
+			color: #673955;
+		}
+	}
 }

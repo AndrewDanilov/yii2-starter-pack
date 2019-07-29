@@ -7,34 +7,40 @@ $params = array_merge(
 return [
 	'id' => 'app-frontend',
 	'basePath' => dirname(__DIR__),
-	'bootstrap' => ['log'],
 	'controllerNamespace' => 'frontend\controllers',
 	'homeUrl' => '/',
 	'components' => [
 		'request' => [
 			'baseUrl' => '',
 			'csrfParam' => '_csrf-frontend',
-			'class' => 'yii\web\Request',
+			'class' => 'frontend\components\AppRequest'
 		],
 		'session' => [
-			// this is the name of the session cookie used for login on the frontend
-			'name' => 'advanced-frontend',
+			'name' => 'session-id',
 		],
 		'errorHandler' => [
 			'errorAction' => 'site/error',
 		],
 		'urlManager' => [
 			'enablePrettyUrl' => true,
-			'enableStrictParsing' => true,
 			'showScriptName' => false,
 			'class' => 'frontend\components\AppUrlManager',
+			'enableStrictParsing' => true,
 			'rules' => [
-				'' => 'site/index',
-				[
-					'class' => 'frontend\components\SitemapUrlRule',
-				],
+				'login' => 'user/login',
+				'logout' => 'user/logout',
+				'register' => 'user/register',
+				'profile' => 'user/profile',
+				'recover-password' => 'user/recover-password',
+				'reset-password' => 'user/reset-password',
+				'ajax/<action>' => 'ajax/<action>',
 				'<action>' => 'site/<action>',
 			],
+		],
+		'recaptcha' => [
+			'class' => 'andrewdanilov\grecaptchav3\Recaptcha',
+			'sitekey' => '12345678901234567890',
+			'secret' => '12345678901234567890',
 		],
 	],
 	'params' => $params,
@@ -42,7 +48,14 @@ return [
 		'custompages' => [
 			'class' => 'andrewdanilov\custompages\Module',
 			// path to Views for pages and categories
-			'templatesPath' => '@frontend/views/custompages', // path to pages and categories template views
+			'templatesPath' => '@frontend/views/custompages',
+		],
+	],
+	'bootstrap' => [
+		'log',
+		[
+			'class' => 'andrewdanilov\InputImages\Bootstrap',
+			'uploadPath' => 'upload/tmp',
 		],
 	],
 ];

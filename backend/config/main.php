@@ -7,7 +7,6 @@ $params = array_merge(
 return [
 	'id' => 'app-backend',
 	'basePath' => dirname(__DIR__),
-	'bootstrap' => ['log'],
 	'controllerNamespace' => 'backend\controllers',
 	'homeUrl' => '/admin',
 	'components' => [
@@ -16,8 +15,7 @@ return [
 			'csrfParam' => '_csrf-backend',
 		],
 		'session' => [
-			// this is the name of the session cookie used for login on the backend
-			'name' => 'advanced-backend',
+			'name' => 'session-id',
 		],
 		'errorHandler' => [
 			'errorAction' => 'site/error',
@@ -36,7 +34,6 @@ return [
 			'cachePath' => Yii::getAlias('@frontend') . '/runtime/cache'
 		],
 	],
-	'params' => $params,
 	'controllerMap' => [
 		'elfinder' => [
 			'class' => 'mihaildev\elfinder\Controller',
@@ -45,26 +42,20 @@ return [
 				[
 					'baseUrl' => '',
 					'basePath' => '@frontend/web',
-					'path' => 'upload/images/products',
-					'name' => 'Фото товаров',
+					'path' => 'upload/images',
+					'name' => 'Изображения',
 				],
 				[
 					'baseUrl' => '',
 					'basePath' => '@frontend/web',
-					'path' => 'upload/images/categories',
-					'name' => 'Обложки категорий',
+					'path' => 'upload/properties',
+					'name' => 'Иконки свойств',
 				],
 				[
 					'baseUrl' => '',
 					'basePath' => '@frontend/web',
-					'path' => 'upload/images/langs',
-					'name' => 'Языки',
-				],
-				[
-					'baseUrl' => '',
-					'basePath' => '@frontend/web',
-					'path' => 'upload/docs',
-					'name' => 'Документы',
+					'path' => 'upload/article-images',
+					'name' => 'Фото для статей',
 				],
 			],
 		],
@@ -88,4 +79,6 @@ return [
 			'templatesPath' => '@frontend/views/custompages',
 		],
 	],
+	'bootstrap' => ['log'],
+	'params' => $params,
 ];

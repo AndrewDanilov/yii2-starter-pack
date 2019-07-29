@@ -18,22 +18,12 @@ class BackendController extends Controller
 				'class' => AccessControl::class,
 				'rules' => [
 					[
-						'actions' => ['login', 'error'],
+						'actions' => ['login'],
 						'allow' => true,
-						'roles' => ['?'],
-					],
-					[
-						'actions' => ['logout'],
-						'allow' => true,
-						'roles' => ['@'],
 					],
 					[
 						'allow' => true,
 						'roles' => ['admin'],
-					],
-					[
-						'allow' => false,
-						'roles' => ['*'],
 					],
 				],
 				'denyCallback' => function () {
@@ -50,6 +40,19 @@ class BackendController extends Controller
 				'actions' => [
 					'delete' => ['POST'],
 				],
+			],
+		];
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	public function actions()
+	{
+		return [
+			'error' => [
+				'class' => 'yii\web\ErrorAction',
+				'layout' => 'error',
 			],
 		];
 	}

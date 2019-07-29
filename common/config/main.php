@@ -18,9 +18,10 @@ return [
 		'user' => [
 			'class' => 'yii\web\User',
 			'identityClass' => 'common\models\User',
+			'accessChecker' => 'common\components\AccessChecker',
 			'enableAutoLogin' => true,
 			'identityCookie' => ['name' => '_identity-common', 'httpOnly' => true],
-			'loginUrl' => ['site/login'],
+			'loginUrl' => ['user/login'],
 		],
 		'authManager' => [
 			'class' => 'yii\rbac\DbManager',
@@ -55,18 +56,6 @@ return [
 			'dateFormat'     => 'php:d.m.Y',
 			'datetimeFormat' => 'php:d.m.Y H:i:s',
 			'timeFormat'     => 'php:H:i:s',
-		],
-		'i18n' => [
-			'translations' => [
-				'*' => [
-					'class' => 'yii\i18n\PhpMessageSource',
-					'basePath' => '@common/translates',
-					'sourceLanguage' => 'ru',
-				],
-			],
-		],
-		'settings' => [
-			'class' => 'common\components\Settings',
 		],
 	],
 ];

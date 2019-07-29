@@ -2,22 +2,22 @@
 
 namespace frontend\components;
 
+use common\models\Locality;
 use yii\web\UrlManager;
-use common\models\Lang;
 
 class AppUrlManager extends UrlManager
 {
 	public function createUrl($params)
 	{
-		if (isset($params['lang'])) {
-			$lang = Lang::getLang($params['lang']);
-			unset($params['lang']);
+		if (isset($params['locality'])) {
+			$locality = Locality::getByAlias($params['locality']);
+			unset($params['locality']);
 		} else {
-			$lang = Lang::getCurrentLang();
+			$locality = Locality::getCurrent();
 		}
 		$url = parent::createUrl($params);
-		if ($lang && !$lang->is_default) {
-			$url = '/' . trim($lang->key . $url, '/');
+		if ($locality && $locality->alias !== '') {
+			$url = '/' . trim($locality->alias . $url, '/');
 		}
 		return $url;
 	}

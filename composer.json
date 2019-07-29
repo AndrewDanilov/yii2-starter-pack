@@ -12,13 +12,31 @@
         "irc": "irc://irc.freenode.net/yii",
         "source": "https://github.com/yiisoft/yii2"
     },
-    "minimum-stability": "stable",
+    "prefer-stable": true,
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=7.0.0",
+		"ext-json": "*",
+		"ext-pdo": "*",
+		"ext-openssl": "*",
+		"ext-curl": "*",
         "yiisoft/yii2": "~2.0.6",
         "yiisoft/yii2-bootstrap": "~2.0.0",
-        "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0"
-    },
+        "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
+        "mihaildev/yii2-elfinder": "*@dev",
+        "mihaildev/yii2-ckeditor": "*@dev",
+        "sadovojav/yii2-ckeditor": "*@dev",
+        "rmrevin/yii2-fontawesome": "~3.3",
+        "andrewdanilov/yii2-admin-panel": "dev-master",
+        "andrewdanilov/yii2-input-images": "dev-master",
+        "andrewdanilov/yii2-thumbs": "dev-master",
+        "andrewdanilov/yii2-menu": "dev-master",
+        "andrewdanilov/yii2-yandexmap": "dev-master",
+        "andrewdanilov/yii2-yandex-metrika": "dev-master",
+        "andrewdanilov/yii2-site-years": "dev-master",
+        "andrewdanilov/yii2-grecaptchav3": "dev-master",
+        "andrewdanilov/yii2-grid-tools": "dev-master",
+        "andrewdanilov/yii2-custom-pages": "dev-master"
+	},
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
         "yiisoft/yii2-gii": "~2.0.0",
@@ -30,6 +48,9 @@
         "process-timeout": 1800,
         "fxp-asset": {
             "enabled": false
+        },
+        "platform": {
+            "php": "7.2"
         }
     },
     "repositories": [
