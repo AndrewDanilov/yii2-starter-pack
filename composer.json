@@ -5,13 +5,6 @@
     "homepage": "http://www.yiiframework.com/",
     "type": "project",
     "license": "BSD-3-Clause",
-    "support": {
-        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
-        "forum": "http://www.yiiframework.com/forum/",
-        "wiki": "http://www.yiiframework.com/wiki/",
-        "irc": "irc://irc.freenode.net/yii",
-        "source": "https://github.com/yiisoft/yii2"
-    },
     "prefer-stable": true,
     "require": {
         "php": ">=7.0.0",
@@ -22,10 +15,9 @@
         "yiisoft/yii2": "~2.0.6",
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
-        "mihaildev/yii2-elfinder": "*@dev",
-        "mihaildev/yii2-ckeditor": "*@dev",
-        "sadovojav/yii2-ckeditor": "*@dev",
         "rmrevin/yii2-fontawesome": "~3.3",
+        "mihaildev/yii2-elfinder": "*@dev",
+        "sadovojav/yii2-ckeditor": "dev-master",
         "andrewdanilov/yii2-admin-panel": "dev-master",
         "andrewdanilov/yii2-input-images": "dev-master",
         "andrewdanilov/yii2-thumbs": "dev-master",
