@@ -13,7 +13,7 @@ return [
 		'request' => [
 			'baseUrl' => '',
 			'csrfParam' => '_csrf-frontend',
-			'class' => 'frontend\components\AppRequest'
+			'class' => 'yii\web\Request'
 		],
 		'session' => [
 			'name' => 'session-id',
@@ -24,7 +24,7 @@ return [
 		'urlManager' => [
 			'enablePrettyUrl' => true,
 			'showScriptName' => false,
-			'class' => 'frontend\components\AppUrlManager',
+			'class' => 'yii\web\UrlManager',
 			'enableStrictParsing' => true,
 			'rules' => [
 				'login' => 'user/login',
@@ -35,6 +35,7 @@ return [
 				'reset-password' => 'user/reset-password',
 				'ajax/<action>' => 'ajax/<action>',
 				'<action>' => 'site/<action>',
+				'' => 'site/index',
 			],
 		],
 		'recaptcha' => [
