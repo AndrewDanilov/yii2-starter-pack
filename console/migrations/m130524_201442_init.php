@@ -32,7 +32,7 @@ class m130524_201442_init extends Migration
         	'email' => 'admin@example.com',
         	'auth_key' => Yii::$app->security->generateRandomString(),
         	'password_hash' => Yii::$app->security->generatePasswordHash('admin'),
-	        'status' => 1,
+	        'status' => 10,
 	        'created_at' => date('Y-m-d H:i:s'),
 	        'is_admin' => 1,
         ]);
