@@ -2,7 +2,6 @@
 namespace frontend\controllers;
 
 use Yii;
-use yii\db\Query;
 use yii\web\Controller;
 use yii\web\BadRequestHttpException;
 use yii\web\Response;
