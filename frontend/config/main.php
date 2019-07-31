@@ -52,11 +52,11 @@ return [
 			'templatesPath' => '@frontend/views/custompages',
 		],
 	],
-	'bootstrap' => [
-		'log',
-		[
-			'class' => 'andrewdanilov\InputImages\Bootstrap',
-			'uploadPath' => 'upload/tmp',
+	'controllerMap' => [
+		'upload' => [
+			'class' => 'andrewdanilov\InputImages\UploadController',
+			'path' => 'upload/tmp', // path to upload images, default is 'upload/images'
 		],
 	],
+	'bootstrap' => ['log'],
 ];
