@@ -15,7 +15,7 @@ $this->registerMetaTag([
 $this->params['breadcrumbs'][] = 'Вход в личный кабинет';
 
 ?>
-<div class="section-main">
+<div class="section">
 	<div class="container">
 		<?= Breadcrumbs::widget([
 			'items' => $this->params['breadcrumbs'],
