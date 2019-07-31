@@ -50,17 +50,7 @@ $this->params['breadcrumbs'][] = $this->title;
 		        'filter' => '',
 	        ],
 	        'is_admin:boolean',
-	        [
-	        	'attribute' => 'organization',
-		        'label' => 'Организация',
-		        'format' => 'raw',
-		        'value' => function(User $user) {
-    	            if (\common\models\Organization::hasUserOrganization($user->id)) {
-		                return \common\models\Organization::getUserOrganization($user->id)->name;
-	                }
-    	            return Html::tag('i', 'нет');
-		        }
-			],
+
 	        [
 		        'class' => 'andrewdanilov\gridtools\FontawesomeActionColumn',
 		        'template' => '{update}{delete}',
