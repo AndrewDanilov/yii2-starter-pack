@@ -56,6 +56,7 @@ class User extends ActiveRecord implements IdentityInterface
 			[['status'], 'in', 'range' => [static::STATUS_ACTIVE, static::STATUS_BLOCKED]],
 			[['status'], 'default', 'value' => static::STATUS_ACTIVE],
 			[['notify_on'], 'boolean'],
+			[['is_admin'], 'boolean'],
 		];
 	}
 
