@@ -25,7 +25,6 @@ class AppAsset extends AssetBundle
 		'/js/placeholders.min.js',
 		'/js/select2.min.js',
 		'/js/swiper.min.js',
-		'/js/user.form.js',
 		'/js/user.menu.js',
 		'/js/user.select2.js',
 		'/js/user.slider.js',
