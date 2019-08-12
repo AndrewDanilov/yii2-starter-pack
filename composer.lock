@@ -174,12 +174,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AndrewDanilov/yii2-feedback.git",
-                "reference": "14ec93c034a2d6722caf2f23e530fd37fb309647"
+                "reference": "246a55bf5092744e609e3c08c247412e28c6865b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AndrewDanilov/yii2-feedback/zipball/14ec93c034a2d6722caf2f23e530fd37fb309647",
-                "reference": "14ec93c034a2d6722caf2f23e530fd37fb309647",
+                "url": "https://api.github.com/repos/AndrewDanilov/yii2-feedback/zipball/246a55bf5092744e609e3c08c247412e28c6865b",
+                "reference": "246a55bf5092744e609e3c08c247412e28c6865b",
                 "shasum": ""
             },
             "require": {
@@ -210,7 +210,7 @@
                 "form",
                 "yii2"
             ],
-            "time": "2019-08-12T19:48:54+00:00"
+            "time": "2019-08-12T20:10:13+00:00"
         },
         {
             "name": "andrewdanilov/yii2-grecaptchav3",
