@@ -27,7 +27,8 @@
         "andrewdanilov/yii2-grecaptchav3": "dev-master",
         "andrewdanilov/yii2-grid-tools": "dev-master",
         "andrewdanilov/yii2-custom-pages": "dev-master",
-        "andrewdanilov/yii2-feedback": "dev-master"
+        "andrewdanilov/yii2-feedback": "dev-master",
+        "andrewdanilov/yii2-fancybox": "dev-master"
 	},
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

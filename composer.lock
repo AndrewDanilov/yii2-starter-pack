@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7a380eb0275f28c457c676819949c2a1",
+    "content-hash": "487d4c8ea43352132140c56b4440b814",
     "packages": [
         {
             "name": "2amigos/yii2-date-picker-widget",
@@ -169,20 +169,64 @@
             "time": "2019-08-03T20:52:13+00:00"
         },
         {
+            "name": "andrewdanilov/yii2-fancybox",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AndrewDanilov/yii2-fancybox.git",
+                "reference": "70b096f787ec7ba3ff685a47f147718c326a5bc9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AndrewDanilov/yii2-fancybox/zipball/70b096f787ec7ba3ff685a47f147718c326a5bc9",
+                "reference": "70b096f787ec7ba3ff685a47f147718c326a5bc9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0",
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "andrewdanilov\\fancybox\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "AndrewDanilov",
+                    "email": "andrewdanilov@gmail.com"
+                }
+            ],
+            "description": "Fancybox Asset",
+            "keywords": [
+                "asset",
+                "extension",
+                "fancybox",
+                "yii2"
+            ],
+            "time": "2019-08-15T08:05:14+00:00"
+        },
+        {
             "name": "andrewdanilov/yii2-feedback",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AndrewDanilov/yii2-feedback.git",
-                "reference": "246a55bf5092744e609e3c08c247412e28c6865b"
+                "reference": "c89032b7940f41a7000ce9744f44aafd721b5ef5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AndrewDanilov/yii2-feedback/zipball/246a55bf5092744e609e3c08c247412e28c6865b",
-                "reference": "246a55bf5092744e609e3c08c247412e28c6865b",
+                "url": "https://api.github.com/repos/AndrewDanilov/yii2-feedback/zipball/c89032b7940f41a7000ce9744f44aafd721b5ef5",
+                "reference": "c89032b7940f41a7000ce9744f44aafd721b5ef5",
                 "shasum": ""
             },
             "require": {
+                "andrewdanilov/yii2-fancybox": "dev-master",
                 "php": ">=5.6.0",
                 "yiisoft/yii2": "~2.0.0"
             },
@@ -210,7 +254,7 @@
                 "form",
                 "yii2"
             ],
-            "time": "2019-08-12T20:10:13+00:00"
+            "time": "2019-08-15T08:15:31+00:00"
         },
         {
             "name": "andrewdanilov/yii2-grecaptchav3",
@@ -828,16 +872,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.10",
+            "version": "2.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "a6c8d7101b19a451c1707b1b79bbbc56e4bdb7ec"
+                "reference": "92dd169c32f6f55ba570c309d83f5209cefb5e23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/a6c8d7101b19a451c1707b1b79bbbc56e4bdb7ec",
-                "reference": "a6c8d7101b19a451c1707b1b79bbbc56e4bdb7ec",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/92dd169c32f6f55ba570c309d83f5209cefb5e23",
+                "reference": "92dd169c32f6f55ba570c309d83f5209cefb5e23",
                 "shasum": ""
             },
             "require": {
@@ -856,7 +900,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "2.1.x-dev"
                 }
             },
             "autoload": {
@@ -882,7 +926,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2019-07-19T20:52:08+00:00"
+            "time": "2019-08-13T17:33:27+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -1559,16 +1603,16 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.24",
+            "version": "2.0.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "4c9e05f7411bfe4d6ba9b38a2feea6e4353f1457"
+                "reference": "c6148db8519b221d2485aa372267c063b2e198e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/4c9e05f7411bfe4d6ba9b38a2feea6e4353f1457",
-                "reference": "4c9e05f7411bfe4d6ba9b38a2feea6e4353f1457",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/c6148db8519b221d2485aa372267c063b2e198e9",
+                "reference": "c6148db8519b221d2485aa372267c063b2e198e9",
                 "shasum": ""
             },
             "require": {
@@ -1655,7 +1699,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2019-07-30T15:17:45+00:00"
+            "time": "2019-08-13T20:04:44+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -4726,7 +4770,8 @@
         "andrewdanilov/yii2-grecaptchav3": 20,
         "andrewdanilov/yii2-grid-tools": 20,
         "andrewdanilov/yii2-custom-pages": 20,
-        "andrewdanilov/yii2-feedback": 20
+        "andrewdanilov/yii2-feedback": 20,
+        "andrewdanilov/yii2-fancybox": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
