@@ -48,9 +48,8 @@ return [
 				],
 				[
 					'class' => 'yii\log\FileTarget',
-					'levels' => ['info'],
-					'categories' => ['debug'],
-					'logFile' => '@backend/runtime/logs/debug.log',
+					'levels' => ['trace'],
+					'logFile' => '@frontend/runtime/logs/debug.log',
 					'maxFileSize' => 2048,
 					'maxLogFiles' => 20,
 				],
