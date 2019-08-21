@@ -217,12 +217,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AndrewDanilov/yii2-feedback.git",
-                "reference": "01bcc1cddf088ebeba7f01f2527cb079a8b294dd"
+                "reference": "48bb822aa62b08012530bb3aee2f778486100304"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AndrewDanilov/yii2-feedback/zipball/01bcc1cddf088ebeba7f01f2527cb079a8b294dd",
-                "reference": "01bcc1cddf088ebeba7f01f2527cb079a8b294dd",
+                "url": "https://api.github.com/repos/AndrewDanilov/yii2-feedback/zipball/48bb822aa62b08012530bb3aee2f778486100304",
+                "reference": "48bb822aa62b08012530bb3aee2f778486100304",
                 "shasum": ""
             },
             "require": {
@@ -254,7 +254,7 @@
                 "form",
                 "yii2"
             ],
-            "time": "2019-08-18T21:34:27+00:00"
+            "time": "2019-08-19T18:43:11+00:00"
         },
         {
             "name": "andrewdanilov/yii2-grecaptchav3",
@@ -397,12 +397,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AndrewDanilov/yii2-menu.git",
-                "reference": "ce9d14e94353f18f0f386bf5d4e7651bee2f62bc"
+                "reference": "f736007f5ad421e1c6d693bb32b87ad0aba71ae4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AndrewDanilov/yii2-menu/zipball/ce9d14e94353f18f0f386bf5d4e7651bee2f62bc",
-                "reference": "ce9d14e94353f18f0f386bf5d4e7651bee2f62bc",
+                "url": "https://api.github.com/repos/AndrewDanilov/yii2-menu/zipball/f736007f5ad421e1c6d693bb32b87ad0aba71ae4",
+                "reference": "f736007f5ad421e1c6d693bb32b87ad0aba71ae4",
                 "shasum": ""
             },
             "require": {
@@ -432,7 +432,7 @@
                 "menu",
                 "yii2"
             ],
-            "time": "2019-07-05T22:18:50+00:00"
+            "time": "2019-08-19T11:25:15+00:00"
         },
         {
             "name": "andrewdanilov/yii2-site-years",
