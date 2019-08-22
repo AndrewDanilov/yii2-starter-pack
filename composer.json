@@ -28,8 +28,9 @@
         "andrewdanilov/yii2-grid-tools": "dev-master",
         "andrewdanilov/yii2-custom-pages": "dev-master",
         "andrewdanilov/yii2-feedback": "dev-master",
-        "andrewdanilov/yii2-fancybox": "dev-master"
-	},
+        "andrewdanilov/yii2-fancybox": "dev-master",
+        "andrewdanilov/yii2-swiper-slider": "dev-master"
+    },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
         "yiisoft/yii2-gii": "~2.0.0",
