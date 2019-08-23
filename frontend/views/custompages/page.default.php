@@ -10,6 +10,8 @@ $this->registerMetaTag([
 	'name' => 'description',
 	'content' => $page->meta_description,
 ]);
+
+\andrewdanilov\custompages\assets\CustomPagesAsset::register($this);
 ?>
 
 <div class="section">

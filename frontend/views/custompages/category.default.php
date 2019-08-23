@@ -11,6 +11,8 @@ $this->registerMetaTag([
 	'name' => 'description',
 	'content' => $category->meta_description,
 ]);
+
+\andrewdanilov\custompages\assets\CustomPagesAsset::register($this);
 ?>
 
 <div class="section">
@@ -34,19 +36,19 @@ $this->registerMetaTag([
 
 			<?php foreach ($pages as $page) { ?>
 
-				<a class="category-list-item" href="<?= \yii\helpers\Url::to(['default/page', 'id' => $page->id]) ?>">
+				<div class="category-list-item">
 
 					<div class="list-item-image">
 						<img src="<?= $page->image ?>" alt="">
 					</div>
 					<div class="list-item-content">
-						<div class="list-item-title"><?= $page->title ?></div>
+						<a class="list-item-title" href="<?= \yii\helpers\Url::to(['default/page', 'id' => $page->id]) ?>"><?= $page->title ?></a>
 						<div class="list-item-body">
 							<?= $page->shortText ?>
 						</div>
 					</div>
 
-				</a>
+				</div>
 
 			<?php } ?>
 
