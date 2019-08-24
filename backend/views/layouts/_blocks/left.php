@@ -19,6 +19,7 @@ foreach (\andrewdanilov\custompages\models\Category::getCategoriesList() as $cat
 $system = [
 	['label' => 'Система'],
 	['label' => 'Пользователи', 'url' => ['/user/index'], 'icon' => 'users'],
+	['label' => 'Файлы', 'icon' => 'file', 'url' => ['/site/filemanager']],
 	['label' => 'Очистить кэш', 'url' => ['/site/clear-cache'], 'icon' => 'sync-alt'],
 ];
 $items = array_merge($dashboard, [], $custompages, [], $system);
