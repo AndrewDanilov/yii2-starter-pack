@@ -10,7 +10,6 @@ $this->title = 'Ошибка';
 <div class="section">
 	<div class="container">
 		<?= Breadcrumbs::widget([
-			'homeLabel' => Yii::$app->params['site.breadcrumbsHomeLabel'],
 			'items' => [
 				'Ошибка',
 			],
