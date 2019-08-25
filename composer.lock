@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "487d4c8ea43352132140c56b4440b814",
+    "content-hash": "eba6293e0a4cda2c28b6053a0ac05099",
     "packages": [
         {
             "name": "2amigos/yii2-date-picker-widget",
@@ -117,18 +117,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AndrewDanilov/yii2-custom-pages.git",
-                "reference": "5011c5923ce485d1461000f77de56a0103912ceb"
+                "reference": "2aa0139bd360cb35a3a577ddcc1165cd3a597b82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AndrewDanilov/yii2-custom-pages/zipball/5011c5923ce485d1461000f77de56a0103912ceb",
-                "reference": "5011c5923ce485d1461000f77de56a0103912ceb",
+                "url": "https://api.github.com/repos/AndrewDanilov/yii2-custom-pages/zipball/2aa0139bd360cb35a3a577ddcc1165cd3a597b82",
+                "reference": "2aa0139bd360cb35a3a577ddcc1165cd3a597b82",
                 "shasum": ""
             },
             "require": {
                 "2amigos/yii2-date-picker-widget": "~1.0",
+                "andrewdanilov/yii2-fancybox": "dev-master",
                 "andrewdanilov/yii2-grid-tools": "dev-master",
                 "andrewdanilov/yii2-input-images": "dev-master",
+                "andrewdanilov/yii2-swiper-slider": "dev-master",
                 "mihaildev/yii2-elfinder": "*@dev",
                 "php": ">=5.6.0",
                 "sadovojav/yii2-ckeditor": "dev-master",
@@ -166,7 +168,7 @@
                 "template",
                 "yii2"
             ],
-            "time": "2019-08-03T20:52:13+00:00"
+            "time": "2019-08-25T14:00:54+00:00"
         },
         {
             "name": "andrewdanilov/yii2-fancybox",
@@ -217,12 +219,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AndrewDanilov/yii2-feedback.git",
-                "reference": "48bb822aa62b08012530bb3aee2f778486100304"
+                "reference": "f2d15c23c9994fdd52ec63f5babb5894cabd7848"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AndrewDanilov/yii2-feedback/zipball/48bb822aa62b08012530bb3aee2f778486100304",
-                "reference": "48bb822aa62b08012530bb3aee2f778486100304",
+                "url": "https://api.github.com/repos/AndrewDanilov/yii2-feedback/zipball/f2d15c23c9994fdd52ec63f5babb5894cabd7848",
+                "reference": "f2d15c23c9994fdd52ec63f5babb5894cabd7848",
                 "shasum": ""
             },
             "require": {
@@ -254,7 +256,7 @@
                 "form",
                 "yii2"
             ],
-            "time": "2019-08-19T18:43:11+00:00"
+            "time": "2019-08-19T20:55:45+00:00"
         },
         {
             "name": "andrewdanilov/yii2-grecaptchav3",
@@ -479,6 +481,49 @@
             "time": "2019-04-17T21:32:26+00:00"
         },
         {
+            "name": "andrewdanilov/yii2-swiper-slider",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AndrewDanilov/yii2-swiper-slider.git",
+                "reference": "c043af74f9d8b1b699553add40ad3d0e541bae71"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AndrewDanilov/yii2-swiper-slider/zipball/c043af74f9d8b1b699553add40ad3d0e541bae71",
+                "reference": "c043af74f9d8b1b699553add40ad3d0e541bae71",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0",
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "andrewdanilov\\swiperslider\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "AndrewDanilov",
+                    "email": "andrewdanilov@gmail.com"
+                }
+            ],
+            "description": "Swiper Slider Asset",
+            "keywords": [
+                "extension",
+                "slider",
+                "swiper",
+                "yii2"
+            ],
+            "time": "2019-08-22T18:27:05+00:00"
+        },
+        {
             "name": "andrewdanilov/yii2-thumbs",
             "version": "dev-master",
             "source": {
@@ -636,12 +681,12 @@
             "version": "v1.7.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/uxsolutions/bootstrap-datepicker.git",
+                "url": "git@github.com:eternicode/bootstrap-datepicker.git",
                 "reference": "d364be5b066b38f3675a5a1dc174ce1ab1f3360e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/uxsolutions/bootstrap-datepicker/zipball/d364be5b066b38f3675a5a1dc174ce1ab1f3360e",
+                "url": "https://api.github.com/repos/eternicode/bootstrap-datepicker/zipball/d364be5b066b38f3675a5a1dc174ce1ab1f3360e",
                 "reference": "d364be5b066b38f3675a5a1dc174ce1ab1f3360e"
             },
             "require": {
@@ -977,16 +1022,16 @@
         },
         {
             "name": "fortawesome/font-awesome",
-            "version": "5.10.1",
+            "version": "5.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FortAwesome/Font-Awesome.git",
-                "reference": "538a5bc4cf7989821d052e3ff919e2bead07021c"
+                "reference": "090e6148d3f63a45b40e7cd8679bd4d64e58d75d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/538a5bc4cf7989821d052e3ff919e2bead07021c",
-                "reference": "538a5bc4cf7989821d052e3ff919e2bead07021c",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/090e6148d3f63a45b40e7cd8679bd4d64e58d75d",
+                "reference": "090e6148d3f63a45b40e7cd8679bd4d64e58d75d",
                 "shasum": ""
             },
             "type": "library",
@@ -1036,7 +1081,7 @@
                 "icon",
                 "svg"
             ],
-            "time": "2019-08-02T20:25:26+00:00"
+            "time": "2019-08-22T20:37:41+00:00"
         },
         {
             "name": "imagine/imagine",
@@ -1248,16 +1293,16 @@
         },
         {
             "name": "studio-42/elfinder",
-            "version": "2.1.49",
+            "version": "2.1.50",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Studio-42/elFinder.git",
-                "reference": "8669ee276693177e2c288d852923f4a0371d1b96"
+                "reference": "ae1a24001af2727ef7ef4e8f32c7dc1b49709062"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Studio-42/elFinder/zipball/8669ee276693177e2c288d852923f4a0371d1b96",
-                "reference": "8669ee276693177e2c288d852923f4a0371d1b96",
+                "url": "https://api.github.com/repos/Studio-42/elFinder/zipball/ae1a24001af2727ef7ef4e8f32c7dc1b49709062",
+                "reference": "ae1a24001af2727ef7ef4e8f32c7dc1b49709062",
                 "shasum": ""
             },
             "require": {
@@ -1291,18 +1336,18 @@
                     "homepage": "http://std42.ru"
                 },
                 {
-                    "name": "Community contributions",
-                    "homepage": "https://github.com/Studio-42/elFinder/contributors"
-                },
-                {
                     "name": "Naoki Sawada",
                     "email": "hypweb+elfinder@gmail.com",
                     "homepage": "http://xoops.hypweb.net"
+                },
+                {
+                    "name": "Community contributions",
+                    "homepage": "https://github.com/Studio-42/elFinder/contributors"
                 }
             ],
             "description": "File manager for web",
             "homepage": "http://elfinder.org",
-            "time": "2019-04-16T15:16:44+00:00"
+            "time": "2019-08-20T14:15:16+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3075,16 +3120,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.5.14",
+            "version": "7.5.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "2834789aeb9ac182ad69bfdf9ae91856a59945ff"
+                "reference": "d79c053d972856b8b941bb233e39dc521a5093f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/2834789aeb9ac182ad69bfdf9ae91856a59945ff",
-                "reference": "2834789aeb9ac182ad69bfdf9ae91856a59945ff",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d79c053d972856b8b941bb233e39dc521a5093f0",
+                "reference": "d79c053d972856b8b941bb233e39dc521a5093f0",
                 "shasum": ""
             },
             "require": {
@@ -3155,7 +3200,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-07-15T06:24:08+00:00"
+            "time": "2019-08-21T07:05:16+00:00"
         },
         {
             "name": "psr/container",
@@ -4562,16 +4607,16 @@
         },
         {
             "name": "webmozart/assert",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "83e253c8e0be5b0257b881e1827274667c5c17a9"
+                "reference": "88e6d84706d09a236046d686bbea96f07b3a34f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/83e253c8e0be5b0257b881e1827274667c5c17a9",
-                "reference": "83e253c8e0be5b0257b881e1827274667c5c17a9",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/88e6d84706d09a236046d686bbea96f07b3a34f4",
+                "reference": "88e6d84706d09a236046d686bbea96f07b3a34f4",
                 "shasum": ""
             },
             "require": {
@@ -4579,8 +4624,7 @@
                 "symfony/polyfill-ctype": "^1.8"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.6",
-                "sebastian/version": "^1.0.1"
+                "phpunit/phpunit": "^4.8.36 || ^7.5.13"
             },
             "type": "library",
             "extra": {
@@ -4609,7 +4653,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2018-12-25T11:19:39+00:00"
+            "time": "2019-08-24T08:43:50+00:00"
         },
         {
             "name": "yiisoft/yii2-debug",
@@ -4771,7 +4815,8 @@
         "andrewdanilov/yii2-grid-tools": 20,
         "andrewdanilov/yii2-custom-pages": 20,
         "andrewdanilov/yii2-feedback": 20,
-        "andrewdanilov/yii2-fancybox": 20
+        "andrewdanilov/yii2-fancybox": 20,
+        "andrewdanilov/yii2-swiper-slider": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
