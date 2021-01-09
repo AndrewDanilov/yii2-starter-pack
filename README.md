@@ -1,6 +1,6 @@
 Yii2 Starter Pack
 ====
-Starter pack for creating new projects
+Starter pack for creating new projects with admin panel, user accounts manager and file manager.
 
 Install
 ----
