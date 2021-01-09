@@ -28,12 +28,13 @@ the installed application. You only need to do these steps once for all.
 3. Open a console terminal, apply migrations with commands
 
     `/path/to/php-bin/php /path/to/yii-application/yii migrate`
+
     `/path/to/php-bin/php /path/to/yii-application/yii migrate --migrationPath=@andrewdanilov/adminpanel/migrations`
 
 4. Set document roots of your web server:
 
-    - for frontend `/path/to/yii-application/frontend/web/` and using the URL `http://frontend.test/`
-    - for backend `/path/to/yii-application/backend/web/` and using the URL `http://backend.test/`
+    - for frontend `/path/to/yii-application/frontend/web/` and using the URL `http://example.com/`
+    - for backend `/path/to/yii-application/backend/web/` and using the URL `http://example.com/admin`
 
     For Apache there is already seted up `.htaccess` files in app root and in `frontend/web` and `backend/web`
     
