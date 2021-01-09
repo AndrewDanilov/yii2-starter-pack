@@ -1,6 +1,6 @@
 <?php
 
-use andrewdanilov\menu\Breadcrumbs;
+use andrewdanilov\breadcrumbs\Breadcrumbs;
 
 /* @var $this yii\web\View */
 

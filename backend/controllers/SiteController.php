@@ -2,21 +2,58 @@
 namespace backend\controllers;
 
 use Yii;
-use yii\db\Query;
-use yii\helpers\Json;
+use yii\caching\CacheInterface;
+use andrewdanilov\adminpanel\controllers\BackendController;
+use andrewdanilov\adminpanel\models\LoginForm;
 
 /**
- * Site controller for backend
+ * Site controller
  */
 class SiteController extends BackendController
 {
 	/**
-	 * Renders the index view for the module
+	 * Displays homepage.
+	 *
 	 * @return string
 	 */
 	public function actionIndex()
 	{
 		return $this->render('index');
+	}
+
+	/**
+	 * Login action.
+	 *
+	 * @return string
+	 */
+	public function actionLogin()
+	{
+		if (!Yii::$app->user->isGuest) {
+			return $this->goHome();
+		}
+
+		$model = new LoginForm();
+		if ($model->load(Yii::$app->request->post()) && $model->login()) {
+			return $this->goBack();
+		} else {
+			$model->password = '';
+
+			return $this->render('login', [
+				'model' => $model,
+			]);
+		}
+	}
+
+	/**
+	 * Logout action.
+	 *
+	 * @return string
+	 */
+	public function actionLogout()
+	{
+		Yii::$app->user->logout();
+
+		return $this->goHome();
 	}
 
 	/**
@@ -29,13 +66,18 @@ class SiteController extends BackendController
 		return $this->render('filemanager');
 	}
 
-	//////////////////////////////////////////////////////////////////
-
+	/**
+	 * Очистка кэша
+	 *
+	 * @return string
+	 */
 	public function actionClearCache()
 	{
-		// очистить кэш таблиц
 		Yii::$app->cache->flush();
-		Yii::$app->frontendCache->flush();
-		return $this->render('clear-cache');
+		if (isset(Yii::$app->frontendCache) && Yii::$app->frontendCache instanceof CacheInterface) {
+			Yii::$app->frontendCache->flush();
+		}
+		$this->getView()->title = 'Управление кэшем';
+		return $this->renderContent('Кэш очищен');
 	}
 }

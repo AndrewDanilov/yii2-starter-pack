@@ -1,11 +1,7 @@
 <?php
-$params = array_merge(
-	require __DIR__ . '/params.php',
-	require __DIR__ . '/params-local.php'
-);
-
 return [
-	'language' => 'ru',
+	'language' => 'ru-RU',
+	'timeZone' => 'Europe/Moscow',
 	'aliases' => [
 		'@bower' => '@vendor/bower-asset',
 		'@npm'   => '@vendor/npm-asset',
@@ -15,47 +11,8 @@ return [
 		'cache' => [
 			'class' => 'yii\caching\FileCache',
 		],
-		'user' => [
-			'class' => 'yii\web\User',
-			'identityClass' => 'common\models\User',
-			'accessChecker' => 'common\components\AccessChecker',
-			'enableAutoLogin' => true,
-			'identityCookie' => ['name' => '_identity-common', 'httpOnly' => true],
-			'loginUrl' => ['user/login'],
-		],
-		'authManager' => [
-			'class' => 'yii\rbac\DbManager',
-			'defaultRoles' => ['guest'],
-		],
-		'mailer' => [
-			'class' => 'yii\swiftmailer\Mailer',
-			'useFileTransport' => false,
-			'transport' => [
-				'class' => 'Swift_SmtpTransport',
-				'username' => 'admin@example.com',
-				'password' => 'yourpassword',
-				'host' => 'smtp.example.com',
-				'port' => '465',
-				'encryption' => 'ssl',
-			],
-		],
-		'log' => [
-			'traceLevel' => YII_DEBUG ? 3 : 0,
-			'targets' => [
-				[
-					'class' => 'yii\log\FileTarget',
-					'levels' => ['error', 'warning'],
-				],
-				[
-					'class' => 'yii\log\FileTarget',
-					'levels' => ['trace'],
-					'logFile' => '@frontend/runtime/logs/debug.log',
-					'maxFileSize' => 2048,
-					'maxLogFiles' => 20,
-				],
-			],
-		],
 		'formatter' => [
+			'defaultTimeZone' => 'Europe/Moscow',
 			'dateFormat'     => 'php:d.m.Y',
 			'datetimeFormat' => 'php:d.m.Y H:i:s',
 			'timeFormat'     => 'php:H:i:s',

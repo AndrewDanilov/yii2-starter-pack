@@ -20,6 +20,14 @@ return [
 		'errorHandler' => [
 			'errorAction' => 'site/error',
 		],
+		'user' => [
+			'class' => 'yii\web\User',
+			'identityClass' => 'andrewdanilov\adminpanel\models\User',
+			'accessChecker' => 'andrewdanilov\adminpanel\AccessChecker',
+			'enableAutoLogin' => true,
+			'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
+			'loginUrl' => ['user/login'],
+		],
 		'urlManager' => [
 			'enablePrettyUrl' => true,
 			'showScriptName' => false,
@@ -35,48 +43,20 @@ return [
 		],
 	],
 	'controllerMap' => [
+		'user' => [
+			'class' => 'andrewdanilov\adminpanel\controllers\UserController',
+		],
 		'elfinder' => [
 			'class' => 'mihaildev\elfinder\Controller',
 			'access' => ['admin'],
 			'roots' => [
 				[
 					'baseUrl' => '',
-					'basePath' => '@frontend/web',
-					'path' => 'upload/images',
-					'name' => 'Изображения',
-				],
-				[
-					'baseUrl' => '',
-					'basePath' => '@frontend/web',
-					'path' => 'upload/properties',
-					'name' => 'Иконки свойств',
-				],
-				[
-					'baseUrl' => '',
-					'basePath' => '@frontend/web',
-					'path' => 'upload/article-images',
-					'name' => 'Фото для статей',
+					'basePath' => '@app',
+					'path' => '',
+					'name' => 'Системные файлы',
 				],
 			],
-		],
-	],
-	'modules' => [
-		'custompages' => [
-			'class' => 'andrewdanilov\custompages\Module',
-			'controllerMap' => [
-				'category' => [
-					'class' => 'andrewdanilov\custompages\controllers\backend\CategoryController',
-					// access role for category controller
-					'access' => ['admin'],
-				],
-				'page' => [
-					'class' => 'andrewdanilov\custompages\controllers\backend\PageController',
-					// access role for page controller
-					'access' => ['admin'],
-				],
-			],
-			// path to Views for pages and categories
-			'templatesPath' => '@frontend/views/custompages',
 		],
 	],
 	'bootstrap' => ['log'],

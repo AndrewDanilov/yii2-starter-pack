@@ -1,28 +1,35 @@
 <?php
 
 use yii\helpers\Html;
-use andrewdanilov\adminpanel\AdminPanelAsset;
-use backend\assets\AppAsset;
+use andrewdanilov\adminpanel\assets\AdminPanelAsset;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
 
 AdminPanelAsset::register($this);
-AppAsset::register($this);
 
-$siteName = Yii::$app->params['siteName'] ?: 'AdminPanel';
+if (isset(Yii::$app->params['siteName'])) {
+	$siteName = Yii::$app->params['siteName'];
+} else {
+	$siteName = 'AdminPanel';
+}
+if (isset(Yii::$app->user->identity['username'])) {
+	$userName = Yii::$app->user->identity['username'];
+} else {
+	$userName = 'Guest';
+}
 $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/andrewdanilov/yii2-admin-panel/src');
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
-	<meta charset="<?= Yii::$app->charset ?>"/>
+    <meta charset="<?= Yii::$app->charset ?>"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<?= Html::csrfMetaTags() ?>
-	<title><?= Html::encode($this->title) ?></title>
-	<?php $this->head() ?>
+    <?= Html::csrfMetaTags() ?>
+    <title><?= Html::encode($this->title) ?></title>
+    <?php $this->head() ?>
 </head>
 <body>
 <?php $this->beginBody() ?>
@@ -38,7 +45,7 @@ $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/andrewdanilo
 
 		<?= $this->render(
 			'_blocks/top',
-			['directoryAsset' => $directoryAsset]
+			['directoryAsset' => $directoryAsset, 'userName' => $userName]
 		) ?>
 
 		<?= $this->render(
@@ -59,3 +66,4 @@ $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/andrewdanilo
 </body>
 </html>
 <?php $this->endPage() ?>
+

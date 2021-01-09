@@ -12,6 +12,19 @@ $config = [
 				PDO::MYSQL_ATTR_INIT_COMMAND => "SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));",
 			],
 		],
+		'mailer' => [
+			'class' => 'yii\swiftmailer\Mailer',
+			'viewPath' => '@common/mail',
+			'useFileTransport' => false,
+			'transport' => [
+				'class' => 'Swift_SmtpTransport',
+				'host' => 'smtp.example.com',
+				'username' => 'mailbox@example.com',
+				'password' => 'mypassword',
+				'port' => '465',
+				'encryption' => 'ssl',
+			],
+		],
 	],
 ];
 
