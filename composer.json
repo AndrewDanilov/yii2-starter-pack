@@ -15,7 +15,7 @@
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
         "mihaildev/yii2-elfinder": "*@dev",
-        "andrewdanilov/yii2-admin-panel": "~2.0.2"
+        "andrewdanilov/yii2-admin-panel": "~2.0.3"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
