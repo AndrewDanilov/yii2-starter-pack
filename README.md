@@ -6,8 +6,8 @@ Install
 ----
 composer create-project --prefer-dist andrewdanilov/yii2-starter-pack my-project "~1.0.0"
 
-## Preparing application
-
+Preparing application
+----
 After you install the application, you have to conduct the following steps to initialize
 the installed application. You only need to do these steps once for all.
 
@@ -114,3 +114,7 @@ the installed application. You only need to do these steps once for all.
         }
     }
     ```
+   
+Using
+----
+You can open Admin Panel with link `yourdomain.tld/admin`. Default admin login/password is admin/admin. You can change it in Admin Panel.
