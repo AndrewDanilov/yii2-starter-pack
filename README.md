@@ -114,7 +114,7 @@ the installed application. You only need to do these steps once for all.
         }
     }
     ```
-   
+
 Using
 ----
 You can open Admin Panel with link `yourdomain.tld/admin`. Default admin login/password is admin/admin. You can change it in Admin Panel.
