@@ -1,11 +1,13 @@
 <?php
 
+use yii\web\YiiAsset;
 use andrewdanilov\adminpanel\widgets\Menu;
 
 /* @var $this \yii\web\View */
 /* @var $siteName string */
 /* @var $directoryAsset false|string */
 
+YiiAsset::register($this);
 ?>
 
 <div class="page-left">
@@ -20,6 +22,6 @@ use andrewdanilov\adminpanel\widgets\Menu;
 		['label' => 'Система'],
 		['label' => 'Пользователи', 'url' => ['/user/index'], 'icon' => 'users'],
 		['label' => 'Файлы', 'url' => ['/site/filemanager'], 'icon' => 'folder'],
-		['label' => 'Очистить кэш', 'url' => ['/site/clear-cache'], 'icon' => 'sync-alt'],
+		['label' => 'Очистить кэш', 'url' => ['/site/clear-cache'], 'icon' => 'sync-alt', 'options' => ['data' => ['confirm' => 'Удалить кэш?', 'method' => 'get']]],
 	]]) ?>
 </div>

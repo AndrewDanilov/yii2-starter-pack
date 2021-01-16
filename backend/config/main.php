@@ -52,7 +52,7 @@ return [
 			'roots' => [
 				[
 					'baseUrl' => '',
-					'basePath' => '@app',
+					'basePath' => __DIR__ . '/../../',
 					'path' => '',
 					'name' => 'Системные файлы',
 				],
