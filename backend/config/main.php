@@ -31,11 +31,7 @@ return [
 		'urlManager' => [
 			'enablePrettyUrl' => true,
 			'showScriptName' => false,
-			'rules' => [
-				[
-					'class' => 'backend\components\UrlRule',
-				]
-			],
+			'rules' => [],
 		],
 		'frontendCache' => [
 			'class' => 'yii\caching\FileCache',
