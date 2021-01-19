@@ -11,24 +11,12 @@ class AppAsset extends AssetBundle
 	public $basePath = '@webroot';
 	public $baseUrl = '@web';
 	public $css = [
-		'/css/jquery.mmenu.all.css',
-		'/css/select2.min.css',
-		'/css/swiper.min.css',
-		'/css/user.select2.css',
-		'/css/user.custom.css',
+		'/css/site.css',
 	];
 	public $js = [
-		'/js/jquery.mmenu.all.js',
-		'/js/placeholders.min.js',
-		'/js/select2.min.js',
-		'/js/swiper.min.js',
-		'/js/user.menu.js',
-		'/js/user.select2.js',
-		'/js/user.slider.js',
-		'/js/user.custom.js',
+		'/js/script.js',
 	];
 	public $depends = [
 		'yii\web\JqueryAsset',
-		'rmrevin\yii\fontawesome\AssetBundle',
 	];
 }

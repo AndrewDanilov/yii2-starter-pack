@@ -2,11 +2,13 @@
 
 use yii\helpers\Html;
 use andrewdanilov\adminpanel\assets\AdminPanelAsset;
+use backend\assets\AppAsset;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
 
 AdminPanelAsset::register($this);
+AppAsset::register($this);
 
 if (isset(Yii::$app->params['siteName'])) {
 	$siteName = Yii::$app->params['siteName'];
