@@ -27,36 +27,12 @@ return [
 			'class' => 'yii\web\UrlManager',
 			'enableStrictParsing' => true,
 			'rules' => [
-				'login' => 'user/login',
-				'logout' => 'user/logout',
-				'register' => 'user/register',
-				'profile' => 'user/profile',
-				'recover-password' => 'user/recover-password',
-				'reset-password' => 'user/reset-password',
+				'' => 'site/index',
 				'ajax/<action>' => 'ajax/<action>',
 				'<action>' => 'site/<action>',
-				'' => 'site/index',
 			],
-		],
-		'recaptcha' => [
-			'class' => 'andrewdanilov\grecaptchav3\Recaptcha',
-			'sitekey' => '12345678901234567890',
-			'secret' => '12345678901234567890',
 		],
 	],
 	'params' => $params,
-	'modules' => [
-		'custompages' => [
-			'class' => 'andrewdanilov\custompages\Module',
-			// path to Views for pages and categories
-			'templatesPath' => '@frontend/views/custompages',
-		],
-	],
-	'controllerMap' => [
-		'upload' => [
-			'class' => 'andrewdanilov\InputImages\UploadController',
-			'path' => 'upload/tmp', // path to upload images, default is 'upload/images'
-		],
-	],
 	'bootstrap' => ['log'],
 ];
