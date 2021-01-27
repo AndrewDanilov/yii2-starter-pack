@@ -29,6 +29,9 @@ return [
 			'rules' => [
 				'' => 'site/index',
 				'ajax/<action>' => 'ajax/<action>',
+				[
+					'class' => 'frontend\components\UrlRule',
+				],
 				'<action>' => 'site/<action>',
 			],
 		],
