@@ -21,7 +21,7 @@ class UrlRule extends BaseObject implements UrlRuleInterface
 	public function parseRequest($manager, $request)
 	{
 		$pathInfo = $request->getPathInfo();
-		if (preg_match('%^(\w+)(?:/(\w+))?$%', $pathInfo, $matches)) {
+		if (preg_match('~^(\w+)(?:/(\w+))?$~u', $pathInfo, $matches)) {
 			$params = [];
 			if (isset($matches[1])) {
 				$params['manufacturer'] = $matches[1];
